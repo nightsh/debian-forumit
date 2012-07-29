@@ -1,9 +1,11 @@
 \documentclass[xcolor=dvipsnames]{beamer} 
-\usecolortheme[named=Gray]{structure} 
+\usecolortheme[named=Black]{structure} 
 \setbeamertemplate{blocks}[shadow=true] 
 \usepackage{ucs}
 \usepackage{wasysym}
-\usepackage[utf8x]{inputenc}
+%\usepackage[utf8x]{inputenc}
+\usepackage{fontspec,lipsum}
+\defaultfontfeatures{Ligatures=TeX}
 %\input beamerthemeumbc4.sty
 %\usepackage{beamerthemeumbc4}
 \useoutertheme{shadow}
@@ -11,6 +13,7 @@
 %\usetheme{Boadilla} % Pretty neat, soft color.
 %\usetheme{umbc4}
 \usetheme{Ilmenau}
+%\usetheme{Szeged}
 %\usetheme{Amsterdam}
 %\usetheme{CambridgeUS}
 %\usetheme{Berlin}
@@ -32,18 +35,20 @@
 \setbeamertemplate{navigation symbols}{} 
 %
 \usepackage{graphicx}
+\definecolor{fade}{RGB}{230,230,230}
+\definecolor{darkred}{RGB}{180,0,0}
 %\usepackage{bm}         % For typesetting bold math (not \mathbold)
 %\logo{\includegraphics[height=0.6cm]{debian-text.eps}}
 %
-\title[Un proiect universal, cu o comunitate globală]{Proiectul Debian}
+\title[Debian GNU/Linux - Oriunde, oricând]{Debian GNU/Linux - Oriunde, oricând}
 \author{Victor Ni\c{t}u}
-\institute[Ceata, Debian România]
+\institute[Fundația Ceata, Debian România]
 {
 Fundația Ceata\\Comunitatea Debian din Rom\^{a}nia\\
 \medskip
-{\emph{victor@debian-linux.ro}}
+{\emph{victor@debian.org.ro}}
 }
-\date{11 iunie 2012\\București, România}
+\date{31 iulie 2012\\Costinești, România}
 % \today will show current date. 
 % Alternatively, you can specify a date.
 %
@@ -56,32 +61,32 @@ Fundația Ceata\\Comunitatea Debian din Rom\^{a}nia\\
 \begin{frame}
 \frametitle{Sumar}
 \begin{itemize}
-\item Introducere în filosofia Debian
+\item Debian? GNU? Linux?
 \item Concepte specifice
-\item Statistici
-\item Comunitatea globală
+\item Istoria speciei
+\item „Habitatul” Debian GNU/Linux
 \item Comunitatea din România
 \item Cum devin membru? De ce?
 \end{itemize}
 \end{frame}
 %
-\section{Filosofia Debian}
+\section{Debian GNU/Linux}
+\subsection{Debian? GNU? Linux?}
 \begin{frame}
-\frametitle{Concepte specifice Debian}
+\frametitle{Debian}
 \begin{block}{}
 \begin{itemize}
-\item Nu este deținut de o companie
-\item Asigură libertatea ideilor și programelor componente
-\item Este cel mai mare proiect al unei comunități libere
-\item Universal - rulează pe o multitudine de platforme
-\item Accesibil - optimizat pentru utilizatori cu deficiențe
+\item Debian Free Software Guidelines
+\item Gestiunea pachetelor: dpkg, apt(itude)
+\item Comunitate foarte activă
+\item Orientat pe libertate și portabilitate
+\item Accesibilitate foarte mare
 \end{itemize}
 \end{block}
 \end{frame}
 
-\subsection{Documentele libertății}
 \begin{frame}
-\frametitle{Debian înseamnă libertate}
+\frametitle{GNU}
 \footnotesize{
 \begin{thebibliography}{99}
  \bibitem[Label1]{key1} Contractul Social Debian
@@ -94,10 +99,9 @@ Fundația Ceata\\Comunitatea Debian din Rom\^{a}nia\\
 \end{thebibliography}
 }
 \end{frame}
-%
 
 \begin{frame}
-\frametitle{Debian \^{i}nseamnă libertate}
+\frametitle{Linux}
 \begin{block}
 {Indicații extrase din DFSG}
 Caracteristici ale unui program liber:\\
@@ -115,57 +119,390 @@ Caracteristici ale unui program liber:\\
 \end{normalsize}
 \end{frame}
 %
-\subsection{Dezvoltare în interesul public}
+\subsection{Structura}
 \begin{frame}
-\frametitle{Structura proiectului}
-\begin{block}
-{}
-Debian este marcă înregistrată a SPI (Software in Public Interest)
-\end{block}
-\begin{block}{}
-Ierarhia și structura decizională este alcătuită exclusiv din membrii proiectului
-\end{block}
-\begin{block}{}
-Există un lider de proiect, votat anual de către membri, care reprezintă interesele Debian în mod public
-\end{block}
-\begin{normalsize}\hfill
-Orice membru Debian poate interveni în direcția care prezintă interes pentru el, iar decizia se va lua de comun acord.
-\end{normalsize}
-  \raisebox{40mm}[0pt][0pt]{%
-    \begin{pgfpicture}{-7mm}{30mm}{0mm}{0mm}
-		\includegraphics[height=1.75cm]{../images/zack.jpg}
+\frametitle{Nucleul - Linux}
+  \raisebox{-40mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-18mm}{-36mm}{0mm}{0mm}
+		\includegraphics[height=60mm]{../images/debian_gnu_linux_01.png}
     \end{pgfpicture}
   }
 \end{frame}
-%
-\subsection{Sistemul de operare universal}
 \begin{frame}
-\frametitle{Disponibilitate și accesibilitate}
+\frametitle{Baza - sistemul GNU}
+  \raisebox{-40mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-18mm}{-36mm}{0mm}{0mm}
+		\includegraphics[height=60mm]{../images/debian_gnu_linux_02.png}
+    \end{pgfpicture}
+    }
+\end{frame}
+\begin{frame}
+\frametitle{Aroma finală - Debian}
+  \raisebox{-40mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-18mm}{-36mm}{0mm}{0mm}
+		\includegraphics[height=60mm]{../images/debian_gnu_linux_03.png}
+    \end{pgfpicture}
+    }
+\end{frame}
+
+%
+\subsection{Familia GNU/Linux}
+\begin{frame}
+\frametitle{Distribuții GNU/Linux}
 \begin{block}
-{Hardware}
-Pentru a rula sistemul de operare, este necesar un minim de hardware disponibil.
-\end{block}
-\begin{block}
-{Arhitecturi}
-Debian poate fi instalat atât pe calculatorul personal, cât și pe dispozitive minimaliste, telefoane mobile sau servere.
-\end{block}
-\begin{block}
-{Portare}
-Debian nu este construit doar în jurul nucleului Linux. Astăzi există portări ale sistemului de operare și către nucleele Hurd și kFreeBSD.
+{Imaginea aia mare}
 \end{block}
 \end{frame}
-%
+
 \begin{frame}
-\frametitle{Disponibilitate și accesibilitate}
+\frametitle{Derivate Debian GNU/Linux}
 \begin{block}
-{Accesibil}
-Debian este configurat din start pentru a putea fi utilizat de oricine.\\
+{Distribuții construite pe baza Debian}
+
+\includegraphics[scale=0.4]{../images/logos/ubuntu_s.png} Ubuntu\\
+Knoppix\\
+Linux Mint Debian Edition (LMDE)\\
+Maemo\\
+EmDebian\\
+siduction\\
+Tails
+\end{block}
+\end{frame}
+
+%
+\subsection{Pure Blends}
+\begin{frame}
+\frametitle{Variante preconfigurate Debian}
+\begin{block}
+{Preconfigurate pentru a servi anumitor scopuri specifice}
+(en. Debian Pure Blends)\\
 \begin{itemize}
-\item Suport nativ pentru terminale Braille
-\item Integrare implicită a sintezei vocale
-\item Optimizări ușoare ale consolei pentru acomodare la diverse condiții de accesibilitate (mai mare, mai contrastat etc.)
-\item Detectare implicită a dispozitivelor auxiliare, încă de la pornirea programului de instalare
-\item Este tradus în peste 50 de limbi
+\item Debian Junior
+	\begin{footnotesize}
+		\textcolor{darkred}{(pentru copii între 1 și 99 de ani)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Med}
+	\begin{footnotesize}
+		\textcolor{fade}{(practică și cercetare în domeniul medical)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Skolelinux / Debian Edu}
+	\begin{footnotesize}
+		\textcolor{fade}{(pentru instituții educaționale)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Science}
+	\begin{footnotesize}
+		\textcolor{fade}{(conține programe pentru inginerie și diferite științe)}
+	\end{footnotesize} 
+\item \textcolor{fade}{DebiChem}
+	\begin{footnotesize}
+		\textcolor{fade}{(pentru a susține activitatea zilnică a chimiștilor)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Accessibility}
+	\begin{footnotesize}
+		\textcolor{fade}{(optimizat pentru utilizatorii cu dizabilități)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian GIS}
+	\begin{footnotesize}
+		\textcolor{fade}{(util pentru GIS și OpenStreetMap)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Multimedia}
+	\begin{footnotesize}
+		\textcolor{fade}{(entuziaști și creatori de conținut multimedia)}
+	\end{footnotesize} 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante preconfigurate Debian}
+\begin{block}
+{Preconfigurate pentru a servi anumitor scopuri specifice}
+(en. Debian Pure Blends)\\
+\begin{itemize}
+\item Debian Junior
+	\begin{footnotesize}
+		(pentru copii între 1 și 99 de ani)
+	\end{footnotesize} 
+\item Debian Med
+	\begin{footnotesize}
+		\textcolor{darkred}{(practică și cercetare în domeniul medical)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Skolelinux / Debian Edu}
+	\begin{footnotesize}
+		\textcolor{fade}{(pentru instituții educaționale)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Science}
+	\begin{footnotesize}
+		\textcolor{fade}{(conține programe pentru inginerie și diferite științe)}
+	\end{footnotesize} 
+\item \textcolor{fade}{DebiChem}
+	\begin{footnotesize}
+		\textcolor{fade}{(pentru a susține activitatea zilnică a chimiștilor)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Accessibility}
+	\begin{footnotesize}
+		\textcolor{fade}{(optimizat pentru utilizatorii cu dizabilități)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian GIS}
+	\begin{footnotesize}
+		\textcolor{fade}{(util pentru GIS și OpenStreetMap)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Multimedia}
+	\begin{footnotesize}
+		\textcolor{fade}{(entuziaști și creatori de conținut multimedia)}
+	\end{footnotesize} 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante preconfigurate Debian}
+\begin{block}
+{Preconfigurate pentru a servi anumitor scopuri specifice}
+(en. Debian Pure Blends)\\
+\begin{itemize}
+\item Debian Junior
+	\begin{footnotesize}
+		(pentru copii între 1 și 99 de ani)
+	\end{footnotesize} 
+\item Debian Med
+	\begin{footnotesize}
+		(practică și cercetare în domeniul medical)
+	\end{footnotesize} 
+\item Skolelinux / Debian Edu
+	\begin{footnotesize}
+		\textcolor{darkred}{(pentru instituții educaționale)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Science}
+	\begin{footnotesize}
+		\textcolor{fade}{(conține programe pentru inginerie și diferite științe)}
+	\end{footnotesize} 
+\item \textcolor{fade}{DebiChem}
+	\begin{footnotesize}
+		\textcolor{fade}{(pentru a susține activitatea zilnică a chimiștilor)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Accessibility}
+	\begin{footnotesize}
+		\textcolor{fade}{(optimizat pentru utilizatorii cu dizabilități)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian GIS}
+	\begin{footnotesize}
+		\textcolor{fade}{(util pentru GIS și OpenStreetMap)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Multimedia}
+	\begin{footnotesize}
+		\textcolor{fade}{(entuziaști și creatori de conținut multimedia)}
+	\end{footnotesize} 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante preconfigurate Debian}
+\begin{block}
+{Preconfigurate pentru a servi anumitor scopuri specifice}
+(en. Debian Pure Blends)\\
+\begin{itemize}
+\item Debian Junior
+	\begin{footnotesize}
+		(pentru copii între 1 și 99 de ani)
+	\end{footnotesize} 
+\item Debian Med
+	\begin{footnotesize}
+		(practică și cercetare în domeniul medical)
+	\end{footnotesize} 
+\item Skolelinux / Debian Edu
+	\begin{footnotesize}
+		(pentru instituții educaționale)
+	\end{footnotesize} 
+\item Debian Science
+	\begin{footnotesize}
+		\textcolor{darkred}{(conține programe pentru inginerie și diferite științe)}
+	\end{footnotesize} 
+\item \textcolor{fade}{DebiChem}
+	\begin{footnotesize}
+		\textcolor{fade}{(pentru a susține activitatea zilnică a chimiștilor)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Accessibility}
+	\begin{footnotesize}
+		\textcolor{fade}{(optimizat pentru utilizatorii cu dizabilități)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian GIS}
+	\begin{footnotesize}
+		\textcolor{fade}{(util pentru GIS și OpenStreetMap)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Multimedia}
+	\begin{footnotesize}
+		\textcolor{fade}{(entuziaști și creatori de conținut multimedia)}
+	\end{footnotesize} 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante preconfigurate Debian}
+\begin{block}
+{Preconfigurate pentru a servi anumitor scopuri specifice}
+(en. Debian Pure Blends)\\
+\begin{itemize}
+\item Debian Junior
+	\begin{footnotesize}
+		(pentru copii între 1 și 99 de ani)
+	\end{footnotesize} 
+\item Debian Med
+	\begin{footnotesize}
+		(practică și cercetare în domeniul medical)
+	\end{footnotesize} 
+\item Skolelinux / Debian Edu
+	\begin{footnotesize}
+		(pentru instituții educaționale)
+	\end{footnotesize} 
+\item Debian Science
+	\begin{footnotesize}
+		(conține programe pentru inginerie și diferite științe)
+	\end{footnotesize} 
+\item DebiChem
+	\begin{footnotesize}
+		\textcolor{darkred}{(pentru a susține activitatea zilnică a chimiștilor)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Accessibility}
+	\begin{footnotesize}
+		\textcolor{fade}{(optimizat pentru utilizatorii cu dizabilități)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian GIS}
+	\begin{footnotesize}
+		\textcolor{fade}{(util pentru GIS și OpenStreetMap)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Multimedia}
+	\begin{footnotesize}
+		\textcolor{fade}{(entuziaști și creatori de conținut multimedia)}
+	\end{footnotesize} 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante preconfigurate Debian}
+\begin{block}
+{Preconfigurate pentru a servi anumitor scopuri specifice}
+(en. Debian Pure Blends)\\
+\begin{itemize}
+\item Debian Junior
+	\begin{footnotesize}
+		(pentru copii între 1 și 99 de ani)
+	\end{footnotesize} 
+\item Debian Med
+	\begin{footnotesize}
+		(practică și cercetare în domeniul medical)
+	\end{footnotesize} 
+\item Skolelinux / Debian Edu
+	\begin{footnotesize}
+		(pentru instituții educaționale)
+	\end{footnotesize} 
+\item Debian Science
+	\begin{footnotesize}
+		(conține programe pentru inginerie și diferite științe)
+	\end{footnotesize} 
+\item DebiChem
+	\begin{footnotesize}
+		(pentru a susține activitatea zilnică a chimiștilor)
+	\end{footnotesize} 
+\item Debian Accessibility
+	\begin{footnotesize}
+		\textcolor{darkred}{(optimizat pentru utilizatorii cu dizabilități)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian GIS}
+	\begin{footnotesize}
+		\textcolor{fade}{(util pentru GIS și OpenStreetMap)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Multimedia}
+	\begin{footnotesize}
+		\textcolor{fade}{(entuziaști și creatori de conținut multimedia)}
+	\end{footnotesize} 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante preconfigurate Debian}
+\begin{block}
+{Preconfigurate pentru a servi anumitor scopuri specifice}
+(en. Debian Pure Blends)\\
+\begin{itemize}
+\item Debian Junior
+	\begin{footnotesize}
+		(pentru copii între 1 și 99 de ani)
+	\end{footnotesize} 
+\item Debian Med
+	\begin{footnotesize}
+		(practică și cercetare în domeniul medical)
+	\end{footnotesize} 
+\item Skolelinux / Debian Edu
+	\begin{footnotesize}
+		(pentru instituții educaționale)
+	\end{footnotesize} 
+\item Debian Science
+	\begin{footnotesize}
+		(conține programe pentru inginerie și diferite științe)
+	\end{footnotesize} 
+\item DebiChem
+	\begin{footnotesize}
+		(pentru a susține activitatea zilnică a chimiștilor)
+	\end{footnotesize} 
+\item Debian Accessibility
+	\begin{footnotesize}
+		(optimizat pentru utilizatorii cu dizabilități)
+	\end{footnotesize} 
+\item Debian GIS
+	\begin{footnotesize}
+		\textcolor{darkred}{(util pentru GIS și OpenStreetMap)}
+	\end{footnotesize} 
+\item \textcolor{fade}{Debian Multimedia}
+	\begin{footnotesize}
+		\textcolor{fade}{(entuziaști și creatori de conținut multimedia)}
+	\end{footnotesize} 
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Variante preconfigurate Debian}
+\begin{block}
+{Preconfigurate pentru a servi anumitor scopuri specifice}
+(en. Debian Pure Blends)\\
+\begin{itemize}
+\item Debian Junior
+	\begin{footnotesize}
+		(pentru copii între 1 și 99 de ani)
+	\end{footnotesize} 
+\item Debian Med
+	\begin{footnotesize}
+		(practică și cercetare în domeniul medical)
+	\end{footnotesize} 
+\item Skolelinux / Debian Edu
+	\begin{footnotesize}
+		(pentru instituții educaționale)
+	\end{footnotesize} 
+\item Debian Science
+	\begin{footnotesize}
+		(conține programe pentru inginerie și diferite științe)
+	\end{footnotesize} 
+\item DebiChem
+	\begin{footnotesize}
+		(pentru a susține activitatea zilnică a chimiștilor)
+	\end{footnotesize} 
+\item Debian Accessibility
+	\begin{footnotesize}
+		(optimizat pentru utilizatorii cu dizabilități)
+	\end{footnotesize} 
+\item Debian GIS
+	\begin{footnotesize}
+		(util pentru GIS și OpenStreetMap)
+	\end{footnotesize} 
+\item Debian Multimedia
+	\begin{footnotesize}
+		\textcolor{darkred}{(entuziaști și creatori de conținut multimedia)}
+	\end{footnotesize} 
 \end{itemize}
 \end{block}
 \end{frame}
