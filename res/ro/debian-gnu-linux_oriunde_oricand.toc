@@ -1,0 +1,14 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Debian GNU/Linux}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Debian? GNU? Linux?}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Pure Blends}{8}{0}{1}
+\beamer@sectionintoc {2}{Oriunde, oricând}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{Debian e flexibil}{17}{0}{2}
+\beamer@subsectionintoc {2}{2}{Mereu aproape}{23}{0}{2}
+\beamer@sectionintoc {3}{Avantaje}{26}{0}{3}
+\beamer@subsectionintoc {3}{1}{Utilizatori}{28}{0}{3}
+\beamer@subsectionintoc {3}{2}{Dezvoltatori}{30}{0}{3}
+\beamer@sectionintoc {4}{Comunitatea Debian}{32}{0}{4}
+\beamer@subsectionintoc {4}{1}{Implicare?}{33}{0}{4}
+\beamer@subsectionintoc {4}{2}{Comunitatea din România}{39}{0}{4}
+\beamer@sectionintoc {5}{Final}{40}{0}{5}

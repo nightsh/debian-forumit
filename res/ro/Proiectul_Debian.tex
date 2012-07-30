@@ -12,11 +12,11 @@
 %\usetheme{Madrid} % My favorite!
 %\usetheme{Boadilla} % Pretty neat, soft color.
 %\usetheme{umbc4}
-\usetheme{Ilmenau}
+%\usetheme{Ilmenau}
 %\usetheme{Szeged}
 %\usetheme{Amsterdam}
 %\usetheme{CambridgeUS}
-%\usetheme{Berlin}
+\usetheme{Berlin}
 %\usetheme{Warsaw}
 %\usetheme{Bergen} % This template has nagivation on the left
 %\usetheme{Frankfurt} % Similar to the default 
@@ -62,16 +62,52 @@ Fundația Ceata\\Comunitatea Debian din Rom\^{a}nia\\
 \frametitle{Sumar}
 \begin{itemize}
 \item Debian? GNU? Linux?
-\item Concepte specifice
-\item Istoria speciei
-\item „Habitatul” Debian GNU/Linux
-\item Comunitatea din România
-\item Cum devin membru? De ce?
+\item Oriunde , oricând
+\item Avantajele Debian GNU/Linux
+\item Comunitatea
+\item Vreau să-mi bag nasul. Cum?
 \end{itemize}
 \end{frame}
 %
 \section{Debian GNU/Linux}
 \subsection{Debian? GNU? Linux?}
+
+\begin{frame}
+\frametitle{Linux}
+\begin{block}{}
+\begin{itemize}
+\item Creat de Linus Torvalds
+\item Este nucleul sistemului
+\item Interacționează cu dispozitivele hardware
+\item Gestionează resursele
+\item Un pinguin bătrân (n. 1991)
+\end{itemize}
+\end{block}
+  \raisebox{-15mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-48mm}{-36mm}{0mm}{0mm}
+		\includegraphics[height=60mm]{../images/debian_gnu_linux_01.png}
+    \end{pgfpicture}
+    }
+\end{frame}
+
+\begin{frame}
+\frametitle{GNU}
+\begin{block}{}
+\begin{itemize}
+\item Inițiat de Richard M. Stallman / FSF
+\item Este un sistem de operare complet
+\item Reprezintă o bază pentru multe alte SO
+\item 100\% liber
+\item Combinat cu nucleul Linux => GNU/Linux
+\end{itemize}
+\end{block}
+  \raisebox{-15mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-48mm}{-36.1mm}{0mm}{0mm}
+		\includegraphics[height=60mm]{../images/debian_gnu_linux_02.png}
+    \end{pgfpicture}
+    }
+\end{frame}
+
 \begin{frame}
 \frametitle{Debian}
 \begin{block}{}
@@ -83,25 +119,15 @@ Fundația Ceata\\Comunitatea Debian din Rom\^{a}nia\\
 \item Accesibilitate foarte mare
 \end{itemize}
 \end{block}
+  \raisebox{-15mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-48mm}{-35.6mm}{0mm}{0mm}
+		\includegraphics[height=60mm]{../images/debian_gnu_linux_03.png}
+    \end{pgfpicture}
+    }
 \end{frame}
 
 \begin{frame}
-\frametitle{GNU}
-\footnotesize{
-\begin{thebibliography}{99}
- \bibitem[Label1]{key1} Contractul Social Debian
- \newblock Documentul esențial în relația Debian - dezvoltatori/utilizatori
- \newblock \emph{Garantează libertatea proiectului, precum și persistența acesteia.}
- \bibitem[Label2]{key2} DFSG
- \newblock Indicațiile Debian în privința programelor libere \\
- (en. Debian Free Software Guidelines)
- \newblock \emph{Extinde Contractul Social printr-un set de reguli ce concretizează definiția programelor libere.}
-\end{thebibliography}
-}
-\end{frame}
-
-\begin{frame}
-\frametitle{Linux}
+\frametitle{DFSG}
 \begin{block}
 {Indicații extrase din DFSG}
 Caracteristici ale unui program liber:\\
@@ -111,55 +137,19 @@ Caracteristici ale unui program liber:\\
 \item permite modificarea / derivarea lui
 \item elimină orice discriminare față de persoane / grupuri / intenții
 \item asigură păstrarea licenței
-\item licența nu trebuie să fie valabilă doar în cadrul Debian
 \end{itemize}
 \end{block}
 \begin{normalsize}
 \hfill Licențe acceptate ca libere: GPL, BSD, CC-BY-SA
 \end{normalsize}
 \end{frame}
-%
-\subsection{Structura}
-\begin{frame}
-\frametitle{Nucleul - Linux}
-  \raisebox{-40mm}[0pt][0pt]{%
-    \begin{pgfpicture}{-18mm}{-36mm}{0mm}{0mm}
-		\includegraphics[height=60mm]{../images/debian_gnu_linux_01.png}
-    \end{pgfpicture}
-  }
-\end{frame}
-\begin{frame}
-\frametitle{Baza - sistemul GNU}
-  \raisebox{-40mm}[0pt][0pt]{%
-    \begin{pgfpicture}{-18mm}{-36mm}{0mm}{0mm}
-		\includegraphics[height=60mm]{../images/debian_gnu_linux_02.png}
-    \end{pgfpicture}
-    }
-\end{frame}
-\begin{frame}
-\frametitle{Aroma finală - Debian}
-  \raisebox{-40mm}[0pt][0pt]{%
-    \begin{pgfpicture}{-18mm}{-36mm}{0mm}{0mm}
-		\includegraphics[height=60mm]{../images/debian_gnu_linux_03.png}
-    \end{pgfpicture}
-    }
-\end{frame}
-
-%
-\subsection{Familia GNU/Linux}
-\begin{frame}
-\frametitle{Distribuții GNU/Linux}
-\begin{block}
-{Imaginea aia mare}
-\end{block}
-\end{frame}
 
 \begin{frame}
 \frametitle{Derivate Debian GNU/Linux}
 \begin{block}
 {Distribuții construite pe baza Debian}
-
-\includegraphics[scale=0.4]{../images/logos/ubuntu_s.png} Ubuntu\\
+%\includegraphics[scale=0.4]{../images/logos/ubuntu_s.png} 
+Ubuntu\\
 Knoppix\\
 Linux Mint Debian Edition (LMDE)\\
 Maemo\\
@@ -167,6 +157,11 @@ EmDebian\\
 siduction\\
 Tails
 \end{block}
+  \raisebox{20mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-45mm}{0mm}{0mm}{0mm}
+		\includegraphics[height=6.5cm]{../images/debian-tree.png}
+    \end{pgfpicture}
+  }
 \end{frame}
 
 %
@@ -507,204 +502,373 @@ Tails
 \end{block}
 \end{frame}
 
-\section{Statistici}
-\subsection{Debian pe hartă}
+\section{Oriunde, oricând}
 \begin{frame}
-\frametitle{Debian în cifre}
+\frametitle{Debian - oriunde, oricând}
 \begin{block}
-{Dezvoltatori pe regiuni geografice}
+{Foarte flexibil}
 \begin{itemize}
-\item Finlanda este pe primul loc, procentual, cu \textbf{21} de dezvoltatori activi și o proporție de 4 / milion de locuitori
-\item \textbf{SUA}, \textbf{Germania} și \textbf{Franța} sunt primele ca număr total de dezvoltatori Debian, cu \textbf{165}, \textbf{155}, respectiv \textbf{94} de conturi active.
-\item România este pe poziția \textbf{46}, cu 2 membri, și unul singur activ.
+\item are multe forme și dimensiuni
+\item poate „locui” în aproape orice condiții
 \end{itemize}
 \end{block}
 \begin{block}
-{Generalizări}
-În total, membri din \textbf{59} de țări sunt implicați direct în dezvoltare.\\
-Un număr de \textbf{920}, dintr-un total de \textbf{1490}, sunt activi și au adus contribuții importante proiectului.
+{Mereu aproape}
+Grad ridicat de portabilitate => o companie permanentă, „încarnat” în multitudinea de dispozitive din jurul nostru.
 \end{block}
 \end{frame}
 
-\subsection{Debian în relație cu alte distribuții}
+\subsection{Debian e flexibil}
 \begin{frame}
-\frametitle{Debian și aplicațiile server}
-  \raisebox{-40mm}[0pt][0pt]{%
-    \begin{pgfpicture}{-10mm}{-2.5mm}{0mm}{0mm}
+\frametitle{Debian poate fi mic...}
+\begin{block}
+{Embedded}
+\begin{itemize}
+\item EmDebian
+\item Raspbian (Raspberry Pi)
+\end{itemize}
+\end{block}
+\begin{block}
+{Tablete}
+\begin{itemize}
+\item Tabletele Vivaldi vor rula Mer + Plasma Active
+\item Debian poate fi instalat pe sisteme cu ecran tactil, la fel ca orice alt sistem
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{...sau impresionant de mare...}
+\begin{block}
+{Super servere}
+\begin{itemize}
+\item Proiectul Debian-Beowulf are ca scop eficientizarea instalării de clustere de mari dimensiuni
+\item Multe dintre cele mai puternice 500 de supercomputere (conform top500.org) rulează Debian
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[b]
+\frametitle{...cam atât de mare:}
+  \raisebox{-5mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-20mm}{-25mm}{0mm}{0mm}
+		\includegraphics[height=4.5cm]{../images/sc1.jpg}
+    \end{pgfpicture}
+  }
+\begin{block}{}
+Clusterul IITAC, University of Dublin, Trinity Centre for High Performance Computing
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Domeniul tău e susținut de un sistem Debian?}
+  \raisebox{-5mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-13mm}{0mm}{0mm}{0mm}
 		\includegraphics[height=6cm]{../images/debian-server.png}
     \end{pgfpicture}
   }
 \end{frame}
 
 \begin{frame}
-\frametitle{Debian - arborele genealogic}
-  \raisebox{-40mm}[0pt][0pt]{%
-    \begin{pgfpicture}{-65mm}{8mm}{0mm}{0mm}
-		\includegraphics[height=6.5cm]{../images/debian-tree.png}
+\frametitle{Embedded + popular}
+Se regăsește în dispozitive foarte comune:
+  \raisebox{0mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-45mm}{-8mm}{0mm}{0mm}
+		\includegraphics[height=2cm]{../images/asus_wl-500g_deluxe-300x240.png}
+    \end{pgfpicture}
+    \begin{pgfpicture}{-11mm}{-10mm}{0mm}{0mm}
+		\includegraphics[height=0.2cm]{../images/logos/debwrt.png}
+    \end{pgfpicture}
+  }
+  \raisebox{0mm}[0pt][0pt]{%
+    \begin{pgfpicture}{15mm}{3mm}{0mm}{0mm}
+		\includegraphics[height=2cm]{../images/n900_maemo.jpg}
+    \end{pgfpicture}
+    \begin{pgfpicture}{-11mm}{0mm}{0mm}{0mm}
+		\includegraphics[height=0.5cm]{../images/maemo_logo.jpg}
+    \end{pgfpicture}
+  }
+  \raisebox{0mm}[0pt][0pt]{%
+    \begin{pgfpicture}{14mm}{12mm}{0mm}{0mm}
+		\includegraphics[height=1.6cm]{../images/raspberrypi.jpg}
+    \end{pgfpicture}
+    \begin{pgfpicture}{-2.5mm}{15mm}{0mm}{0mm}
+		\includegraphics[height=0.5cm]{../images/raspbian_logo.png}
     \end{pgfpicture}
   }
 	\begin{itemize}
-		\item Ubuntu
-		\item Linux Mint
-		\item MeeGo
-		\item Knoppix
-		\item DSL (Damn Small Linux)
+		\item Routere cu SO derivat din Debian
+		\item Nokia au avut mai multe versiuni de\\ 
+		sisteme de operare bazate pe Debian
+		\item Raspberry Pi => Raspbian
+		\item Tablete cu derivate Debian (Mer)
 	\end{itemize}
 \end{frame}
 
-\section{Noutăți}
 \begin{frame}
-\frametitle{Debian 7.0 - Wheezy?}
+\frametitle{Sisteme desktop și portabile}
+	\begin{itemize}
+		\item Instalabil pe orice arhitectură desktop sau server\\
+		\item Este portat pe mai multe nuclee (Linux, kFreeBSD, HURD)\\
+		\item Este tradus în peste 50 de limbi\\
+	\end{itemize}
+\end{frame}
+
+\subsection{Mereu aproape}
+\begin{frame}
+\frametitle{Activ 24/7}
 \begin{block}
-{Când?}
-\begin{small}
-Spre sfârșitul lui iunie 2012, Debian/testing va intra în perioada de \emph{freeze}, și se va lucra exclusiv la repararea defectelor ce previn lansarea.\\
-Ne așteptăm ca în prima jumătate a lui 2013 noua versiune să fie în curs de lansare.
+{Dezvoltare pe aproape orice fus orar}
+\begin{small}\begin{center}
+Datorită distribuției dezvoltatorilor pe glob, Debian este un proiect \color{darkred}permanent activ.\\
+\color{darkred}\rule{3cm}{1pt}\\
+\color{black}Probleme sau întrebări pot apărea oricând.\\
+\color{darkred}\rule{4cm}{1pt}\\
+\color{black}De obicei lucrurile (în special software) se strică noaptea sau în weekend.\\
+\color{darkred}\rule{4cm}{1pt}\\
+\color{black}Este important să poți comunica direct cu creatorii aplicațiilor folosite.
+\end{center}
 \end{small}
 \end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle{Freeze}
-  \raisebox{-40mm}[0pt][0pt]{%
-    \begin{pgfpicture}{-12.5mm}{0mm}{0mm}{0mm}
-		\includegraphics[height=7cm]{../images/freeze.png}
+\frametitle{Activ 24/7}
+\begin{block}
+{Debian nu înseamnă doar dezvoltatori}
+\begin{small}
+În orice moment, o întreagă armată de administratori de sistem și utilizatori Debian se află online, gata să răspundă oricărei provocări legate de buna funcționare a sistemului.
+	\begin{itemize}
+		\item IRC: \#debian pe \color{darkred}irc.debian.net\\
+		\item \color{black}Liste de discuții: \color{darkred}lists.debian.org\\
+		\item \color{black}Forumuri: \color{darkred}forums.debian.net \color{black}sau \color{darkred}forum.debian.org.ro\\
+	\end{itemize}
+\end{small}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Harta dezvoltatorilor Debian}
+  \raisebox{0mm}[0pt][0pt]{%
+    \begin{pgfpicture}{-7.5mm}{5mm}{0mm}{0mm}
+		\includegraphics[height=6.5cm]{../images/developers.map.jpeg}
     \end{pgfpicture}
   }
 \end{frame}
 
-\subsection{Noutăți în Wheezy}
+\section{Avantaje}
 \begin{frame}
-\frametitle{Ce e nou?}
+\frametitle{Generalități}
 \begin{block}
-{Multi-arch}
-Posibilitatea de a crea pachete pentru diferite arhitecturi fără necesitatea instalării acestora (dpkg/multiarch).
-\end{block}
-\begin{block}
-{Instalare mai accesibilă}
-Suport implicit pentru autentificare WPA\\
-Suport pentru ARM
-\end{block}
-\begin{block}
-{Actualizarea nucleului}
-Debian GNU/Linux va rula pe un nucleu din generația 3.x.
+{Avantajele utilizării Debian GNU/Linux}
+\begin{itemize}
+	\item Comunitatea este mare, activă și prietenoasă
+	\item Proiectul este matur, stabil și previzibil
+	\item Apreciem transparența, atât cea decizională, cât și în implementările efectuate
+\end{itemize}
 \end{block}
 \end{frame}
 
+\begin{frame}
+\frametitle{Cuvântul cheie - diversitate}
+\begin{block}
+{Oricine poate folosi Debian GNU/Linux}
+Fiecare poate găsi o combinație unică și productivă în utilizarea sistemului de operare.\\
+În sprijinul acestei idei au apărut „Pure Blends”, demonstrând eficiența într-o varietate foarte mare de cerințe practice.
+\begin{itemize}
+	\item Elevi si studenți din orice domeniu
+	\item Cercetători și oameni de știință
+	\item Entuziaști ai tehnologiei
+\end{itemize}
+\end{block}
+\end{frame}
+
+\subsection{Utilizatori}
+\begin{frame}
+\frametitle{Stabilitate și maturitate}
+\begin{block}
+{Avantajele utilizării Debian GNU/Linux}
+\begin{itemize}
+	\item Cu toții vrem un sistem stabil...
+	\item rapid...
+	\item previzibil...
+	\item sigur.
+\end{itemize}
+În plus, securitatea sistemului este limitată doar de intențiile și priceperea utilizatorilor acestuia.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Extrem de personalizabil}
+\begin{block}
+{Ai propria viziune despre mediul de lucru?}
+Dacă da, vei fi plăcut impresionat. În lumea sistemelor GNU/Linux, a avea o multitudine de variante este ceva extrem de comun.
+\end{block}
+\begin{block}
+{Îți place să experimentezi?}
+Nu există teren mai solid și mai diversificat. Alege să-ți creezi propria experiență unică, combinând piese din puzzle-ul programelor libere!
+\end{block}
+\end{frame}
+
+\subsection{Dezvoltatori}
+\begin{frame}
+\frametitle{Facilitarea procesului de creație}
+\begin{block}
+{Sistemul de operare este un aliat, nu un sabotor}
+\begin{itemize}
+	\item O multitudine de instrumente
+	\item Posibilitate de dezvoltare pentru mai multe platforme
+	\item Integrare solidă cu sistemul de operare
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Acces la structura internă a sistemului}
+\begin{block}
+{...sau cum să învățăm din codul sursă}
+\begin{itemize}
+	\item Putem studia și modifica orice element al sistemului
+	\item Studierea codului deja scris facilitează de multe ori producerea de cod superior
+	\item Ne putem ajusta sistemul de operare propriilor tehnici de dezvoltare
+\end{itemize}
+\end{block}
+\end{frame}
 
 \section{Comunitatea Debian}
 \begin{frame}
-\frametitle{Planeta Debian}
+\frametitle{Comunitatea Debian}
 \begin{block}
-{Ce este? Ce are special?}
+{Ce are special?}
 \begin{itemize}
-\item Oameni implicați într-o gamă largă de domenii
-\item Oameni care se întâlnesc rar, și cu multă plăcere!
-\item Activiști în favoarea libertății informatice și de exprimare
-\item Jurnalișți, ingineri, utilizatori pasionați, hackeri sau artiști, toți lucrează pe același front
+\item Membri din domenii diferite, implicați într-un proiect comun
+\item Debian nu are (în mare parte) termene limită; se lucrează cu plăcere și din plăcere!
+\item Deciziile sunt luate de comun acord între dezvoltatori (și utilizatori, unde este aplicabil)
 \end{itemize}
   \raisebox{0mm}[0mm][0pt]{%
     \begin{pgfpicture}{-50mm}{10mm}{0mm}{0mm}
-		\includegraphics[height=2cm]{../images/debconf11.jpg}
+		\includegraphics[height=2cm]{../images/debconf12.jpg}
     \end{pgfpicture}
   }
 \end{block}
 \end{frame}
 
-\subsection{De ce să mă implic?}
+\subsection{Implicare?}
 \begin{frame}
-\frametitle{De ce? Cum? Eu?}
+\frametitle{}
+\begin{small}
+Concept cheie: „do-ocracy” - dacă ai idei, ești liber să le încerci.
+\end{small}
 \begin{block}
 {Părțile bune}
 \begin{itemize}
 \item Poți influența direct cursul proiectului
-\item Ocazia de a lucra cu persoane remarcabile în domeniu
-\item Indiferent ce știi să faci, poate fi utilizat productiv
+\item Ocazia de a lucra cu adevărați profesioniști
+\item Indiferent ce știi să faci / cât timp ai, poți fi productiv
 \item Recunoașterea imediată și obiectivă a realizărilor
-\item Mediu foarte prietenos
 \end{itemize}
 \end{block}
 \begin{block}
 {Părțile rele}
 \begin{itemize}
-\item Deciziile bune se iau greu
+\item Deciziile (bune) se iau greu
 \item Responsabilitatea crește cu numărul distribuțiilor derivate
 \item Dispersarea pe glob face sincronizările online foarte dificile
 \end{itemize}
 \end{block}
 \end{frame}
 
-\subsection{Comunitatea Debian din România}
 \begin{frame}
-\frametitle{Povestea debian-linux.ro}
+\frametitle{Implicare: Traduceri (1/5)}
 \begin{block}{}
-...a început in februarie 2011, cu ajutorul ServerHost.\\
-\hfill\\
-Ce am construit noi între timp:
+Traducerile sunt cea mai simplă cale de a participa la dezvoltarea Debian:\\
 \begin{itemize}
-\item Un forum cu activitate moderată
-\item Un sit informativ despre Debian
-\item Bazele unei comunități unite
+\item Documentație
+\item Pagini web (debian.org / wiki.debian.org)
+\item Manuale
+\item Articole din presa scrisă și online
+\item Debian Project News (\textbf{DPN})
 \end{itemize}
 \end{block}
-  \raisebox{0mm}[0mm][0pt]{%
-    \begin{pgfpicture}{-75mm}{-8mm}{0mm}{0mm}
-		\includegraphics[height=2cm]{../images/dlro.png}
-    \end{pgfpicture}
-  }
 \end{frame}
 
 \begin{frame}
-\frametitle{Povestea debian-linux.ro}
+\frametitle{Implicare: Identificarea și raportarea erorilor (2/5)}
 \begin{block}{}
-...și va prinde forțe proaspete în iunie 2012!\\
-\hfill\\
-Ce vrem să facem:
+Debian Bug Tracking System\\
 \begin{itemize}
-\item Un sit plin de resurse utile
-\item Ghiduri, tutoriale, cursuri și ateliere
-\item Traduceri și promovare
+\item Trierea / validarea rapoartelor deschise
+\item Completarea descrierilor
+\item Raportarea de noi erori
+\item Solicitarea de noi funcționalități
+\item Corelarea și marcarea corespunzătoare a rapoartelor existente
 \end{itemize}
 \end{block}
-  \raisebox{0mm}[0mm][0pt]{%
-    \begin{pgfpicture}{-80mm}{-17mm}{0mm}{0mm}
-		\includegraphics[height=2cm]{../images/debswiss.jpg}
-    \end{pgfpicture}
-  }
 \end{frame}
 
-\subsection{Proiecte și planuri}
 \begin{frame}
-\frametitle{Ce facem noi acum?}
+\frametitle{Implicare: Pregătirea de pachete (3/5)}
+\begin{block}{}
+Fiecare program are nevoie de un pachet compatibil cu SO\\
 \begin{itemize}
-\item Traducerea manualului liber \emph{Debian Administrator's Handbook}, scris de Raphael Hertzog și Roland Mas
-\item Planificăm situl debian-linux.ro în vederea transformării
-\item Organizăm întâlniri!
-\item Antrenăm comunitatea
+\item Se respectă regulile specifice managerului de pachete
+\item Autorul original al programului trebuie consultat periodic pentru a păstra pachetele actualizate (reîmpachetarea noilor versiuni)
+\item Deseori este nevoie să fie preluate pachetele altui administrator
+\item Se urmărește tranziția acestuia în cadrul procesului de dezvoltare
+\item Erorile raportate trebuiesc triate, eventual trimise către autorul original (en. upstream)
 \end{itemize}
+\end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle{Ce putem face în continuare?}
+\frametitle{Implicare: Contribuirea cu cod (4/5)}
+\begin{block}{}
+Repararea erorilor raportate\\
 \begin{itemize}
-\item Atelier.deb (sau cum să împachetezi resurse pentru Debian)
-\item Installfest
-\item Ședințe tehnice (~MiniDebConf)
-\item Întâlniri de eliminare a defectelor (Bug Squashing Party)
-\item Petreceri de lansare (\emph{nu e greu, sunt rare} \smiley )
+\item Debian Bug Tracking System (bugs.debian.org)
+\item Verificare
+\item Reparare
+\item Trimiterea soluției către administratorii pachetului
 \end{itemize}
+\end{block}
+\begin{block}{}
+Scrierea de cod nou\\
+\begin{itemize}
+\item De obicei realizată de dezvoltatorii cu experiență în cadrul proiectului
+\end{itemize}
+\end{block}
 \end{frame}
 
 \begin{frame}
-\frametitle{Ce vrem să obținem?}
+\frametitle{Implicare: Proiectarea de noi machete grafice (5/5)}
+\begin{block}{}
+Interfața unui mediu de lucru e un aspect important?\\
+Dacă da, ai viziunea și aptitudinile necesare?
+\begin{itemize}
+\item Poți contribui la grafica Debian, fără a fi necesară o implicare anterioară în cadrul proiectului
+\item Înainte de fiecare versiune, tema grafică este aleasă de comun acord utilizatori / dezvoltatori
+\item Există și alte moduri de completare a graficii: seturi, palete de culori, teme pentru web, materiale promoționale etc.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\subsection{Comunitatea din România}
+\begin{frame}
+\frametitle{Proiecte și planuri}
+\begin{block}{Ce urmează?}
+\begin{itemize}
+\item Traducerea documentației existente
+\item Organizarea a cât mai multe evenimente
+\item Contribuirea cu cod către Debian GNU/Linux
+\end{itemize}
+\end{block}
+\begin{block}{Ce vrem să obținem?}
 \begin{itemize}
 \item Un număr crescut de contribuții 100\% românești
 \item Mai mulți membri și dezvoltatori în cadrul Debian
-\item Traducerea și publicarea regulată a DPN (en. \emph{Debian Project News})
-\item O notorietate crescută a sistemului de operare în rândul utilizatorilor de GNU/Linux
 \end{itemize}
+\end{block}
 \end{frame}
-
 
 \section{Final} 
 \begin{frame}

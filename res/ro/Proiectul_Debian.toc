@@ -1,16 +1,14 @@
 \beamer@endinputifotherversion {3.10pt}
 \beamer@sectionintoc {1}{Debian GNU/Linux}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Debian? GNU? Linux?}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{Structura}{6}{0}{1}
-\beamer@subsectionintoc {1}{3}{Familia GNU/Linux}{9}{0}{1}
-\beamer@subsectionintoc {1}{4}{Pure Blends}{11}{0}{1}
-\beamer@sectionintoc {2}{Statistici}{19}{0}{2}
-\beamer@subsectionintoc {2}{1}{Debian pe hartă}{19}{0}{2}
-\beamer@subsectionintoc {2}{2}{Debian în relație cu alte distribuții}{20}{0}{2}
-\beamer@sectionintoc {3}{Noutăți}{22}{0}{3}
-\beamer@subsectionintoc {3}{1}{Noutăți în Wheezy}{24}{0}{3}
-\beamer@sectionintoc {4}{Comunitatea Debian}{25}{0}{4}
-\beamer@subsectionintoc {4}{1}{De ce să mă implic?}{26}{0}{4}
-\beamer@subsectionintoc {4}{2}{Comunitatea Debian din România}{27}{0}{4}
-\beamer@subsectionintoc {4}{3}{Proiecte și planuri}{29}{0}{4}
-\beamer@sectionintoc {5}{Final}{32}{0}{5}
+\beamer@subsectionintoc {1}{2}{Pure Blends}{8}{0}{1}
+\beamer@sectionintoc {2}{Oriunde, oricând}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{Debian e flexibil}{17}{0}{2}
+\beamer@subsectionintoc {2}{2}{Mereu aproape}{23}{0}{2}
+\beamer@sectionintoc {3}{Avantaje}{26}{0}{3}
+\beamer@subsectionintoc {3}{1}{Utilizatori}{28}{0}{3}
+\beamer@subsectionintoc {3}{2}{Dezvoltatori}{30}{0}{3}
+\beamer@sectionintoc {4}{Comunitatea Debian}{32}{0}{4}
+\beamer@subsectionintoc {4}{1}{Implicare?}{33}{0}{4}
+\beamer@subsectionintoc {4}{2}{Comunitatea din România}{39}{0}{4}
+\beamer@sectionintoc {5}{Final}{40}{0}{5}
